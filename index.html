@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
+
+  <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
+  
+  <title>Frontend Mentor | Todo app</title>
+
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Josefin+Sans:wght@400;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+
+  <style>
+    .front-end {
+      max-width: 1440px;
+      width: 100%;
+      height: 32px;
+      margin: 0 auto;
+      background-color: black;
+      position: relative;
+    }
+  
+    .attribution {
+      font-size: 11px;
+      text-align: center;
+      color: white;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+    }
+  
+    .attribution a,
+    .attribution span {
+      color: hsl(227, 45%, 77%);
+    }
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header class="header">
+      <div class="wrapper">
+        <div class="header-flex">
+          <nav class="header-nav">
+            <h1>Todo</h1>
+            <div class="mode">
+              <img src="images/icon-sun.svg" alt="">
+            </div>
+          </nav>
+          <div class="header-type">
+            <span class="checkbox">
+              <img src="images/icon-check.svg" alt="">
+            </span>
+            <input class="input" type="text" placeholder="Create a new todo">
+          </div>
+        </div>
+      </div>
+    </header>
+
+    <div class="wrapper">
+      <main class="main">
+        <div class="main-list">
+          
+        </div>
+        <div class="main-footer">
+          <h4>0 items left</h4>
+          <ul>
+            <li><a class="all clicked" href="#">All</a></li>
+            <li><a class="active" href="#">Active</a></li>
+            <li><a class="complete" href="#">Completed</a></li>
+          </ul>
+          <a class="clear-complete" href="#">Clear Completed</a>
+        </div>
+      </main>
+    </div>
+  </div>
+
+  <footer class="front-end">
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.
+      Coded by <span>Javid Alizada</span>.
+    </p>
+  </footer>
+</body>
+<script src="app.js"></script>
+</html>
